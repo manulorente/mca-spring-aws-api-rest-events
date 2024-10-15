@@ -1,4 +1,17 @@
-# Cloud Computing P01
+# Events API serverless
+
+This project is a serverless API to manage events. It is developed using Java 17, Spring Boot, and Amazon Web Services (AWS) services. In this case, the project uses Amazon S3 to store images and Amazon RDS to store data.
+
+## Features
+
+- Create, read, update, and delete events
+- Upload and delete images
+- Get all events
+- Get event by id
+- Get events by name
+- Get events by date
+
+## Getting started
 
 ## 1 - Create S3 bucket
 
@@ -96,3 +109,17 @@ sudo systemctl daemon-reload
 sudo systemctl enable events_service
 sudo systemctl start events_service
 ```
+
+## Automation
+
+CloudFormation template to create the resources in AWS is in the `cloudformation` folder.
+
+## Change Log
+
+| **Version** | **Description** |
+|-------------|-----------------|
+| 0.0.1       | Initial release |
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
